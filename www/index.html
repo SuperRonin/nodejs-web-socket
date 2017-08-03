@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" style="width:100%;height:100%;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+
+</head>
+
+<body style="width:100%;height:100%;">
+    <div class="container">
+        <p id="status"></p>
+        <button id="sendBtn">发送消息</button>
+        <textarea type="text" id="messageInput"></textarea>
+        <div class="userinfo" id="userinfo">
+            <input id="name" type="text"></input>
+            <input type="button" value="确认" id="sure"></button>
+        </div>
+        <div id="historyMsg"></div>
+    </div>
+    <div class="mask" id="mask"></div>
+</body>
+<script src="socket.io.js"></script>
+<script src="index.js"></script>
+
+</html>
